@@ -1,0 +1,175 @@
+/* РћР±С‰РёРµ СЃС‚РёР»Рё */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* РЁР°РїРєР° СЃР°Р№С‚Р° (СЂР°Р±РѕС‚Р°РµС‚ Рё РґР»СЏ old, Рё РґР»СЏ new) */
+body > header {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+body > header img {
+    max-width: 32px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body > header h1 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    color: #2c3e50;
+}
+
+body > header p {
+    color: #3068D8;
+    margin: 8px auto 0;
+    cursor: pointer;
+    width: fit-content;
+}
+
+header p:hover {
+    text-decoration: underline;
+}
+
+/* РќР°РІРёРіР°С†РёСЏ (РїСЂРёСЃСѓС‚СЃС‚РІСѓРµС‚ С‚РѕР»СЊРєРѕ РІ old, РЅРѕ СЃС‚РёР»Рё РѕСЃС‚Р°РІР»СЏРµРј) */
+nav {
+    background-color: #2c3e50;
+    padding: 16px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+nav li {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background-color: #34495e;
+}
+
+/* РћСЃРЅРѕРІРЅРѕР№ РєРѕРЅС‚РµРЅС‚ */
+main {
+    margin: 0 auto 32px;
+    max-width: 720px;
+}
+
+main > section {
+    margin-bottom: 16px;
+    padding-top: 16px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+section article {
+    background-color: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+main > section img {
+    width: 200px;
+    float: right;
+    margin: 16px 0 16px 16px;
+    border-radius: 8px;
+}
+
+section p {
+    margin: 16px 0;
+    line-height: 1.5;
+}
+
+section > article > ul {
+    list-style: none;
+    padding: 0;
+}
+
+section > article > ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* РЎС‚РёС…РѕС‚РІРѕСЂРµРЅРёРµ: РїРѕСЃР»РµРґРЅСЏСЏ СЃРµРєС†РёСЏ РІ main РІ РѕР±РѕРёС… С€Р°Р±Р»РѕРЅР°С… */
+main > section:last-of-type > article p {
+    font-style: italic;
+}
+
+/* Р‘РѕРєРѕРІР°СЏ РїР°РЅРµР»СЊ */
+aside {
+    background-color: #2c3e50;
+    background-image: url(https://files.informatics.ru/website/web4/lesson2/hw/joy.png);
+    background-position: top 8px right 8px;
+    background-repeat: no-repeat;
+    background-size: 92px auto;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px;
+    border-radius: 8px;
+}
+
+aside h2 {
+    color: white;
+}
+
+aside > article > p {
+    color: #f8f9fa;
+}
+
+aside > p {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    transition: opacity 300ms;
+}
+
+aside > p:hover {
+    opacity: 0.8;
+}
+
+/* РџРѕРґРІР°Р» */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+}
