@@ -1,0 +1,32 @@
+body {
+    background-color: #61B7CF;
+    color: #025167;
+}
+
+header, main, footer {
+    width: 1024px;
+    margin: 16px auto;
+    display: flex;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #fff;
+    
+}
+.cage {
+    width: 25%;
+    height: 200px;
+
+}
+.big-cage {
+    width: 50%;
+    height: 400px;
+}
+.mid-cage {
+    width: 33%;
+    height: 250px;
+
+}
+
+img {
+    width: 100%;
+}
