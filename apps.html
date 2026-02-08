@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин приложений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .app-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 15px;
+            padding: 20px;
+            transition: 0.3s;
+        }
+        .app-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+        .download-btn {
+            background: #2196f3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Каталог приложений</h1>
+    
+    <div class="app-card">
+        <img src="icon1.png" alt="Иконка приложения" class="app-icon">
+        <h2>Название приложения</h2>
+        <p>Описание приложения</p>
+        <a href="#" class="download-btn" onclick="downloadApp()">Скачать</a>
+    </div>
+
+    <script>
+        function downloadApp() {
+            if (/iPhone|iPad/i.test(navigator.userAgent)) {
+                window.location.href = "https://apps.apple.com/your-app-link";
+            } else if (/Android/i.test(navigator.userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=your.package.name";
+            } else {
+                alert("Приложение доступно только для мобильных устройств");
+            }
+        }
+    </script>
+</body>
+</html>
